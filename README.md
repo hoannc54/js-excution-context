@@ -31,8 +31,8 @@ Call Stack là gì
 sự khác biệt giữa Execution Context toàn cục và Execution Context cục bộ
 
 ### Javascript: Execution Context là gì? Javascript chạy mã của bạn như thế nào?
-Javascript chạy mã của bạn như thế nào?
-Nếu bạn là một nhà phát triển cấp cao, bạn có thể đã biết câu trả lời.
+Javascript chạy code của bạn như thế nào?
+Nếu bạn là một senior developer, bạn có thể đã biết câu trả lời.
 Nếu bạn là người mới bắt đầu, chúng ta sẽ cùng nhau tìm hiểu.
 Sự thật là,Tổng quan về Javascript không dễ dàng.
 Nhưng tôi đảm bảo bạn có thể học chúng.
@@ -51,9 +51,9 @@ xong?
 
 Nó trông không khó nhỉ!
 
-Bây giờ hãy cho tôi biết: theo thứ tự nào bạn nghĩ trình duyệt sẽ đánh giá mã đó?
+Bây giờ hãy cho tôi biết: theo thứ tự nào bạn nghĩ trình duyệt sẽ đánh giá code đó?
 
-Nói cách khác, nếu bạn là trình duyệt, bạn sẽ đọc mã đó như thế nào?
+Nói cách khác, nếu bạn là trình duyệt, bạn sẽ đọc đoạn code đó như thế nào?
 
 Nghe có vẻ dễ dàng.
 
@@ -93,15 +93,15 @@ Tin tốt đây? Tôi sẽ làm cho mọi thứ trở nên dễ hiểu đối v�
 
  Execution Context trong Javascript là gì?
 
-Mỗi khi bạn chạy Javascript trong một trình duyệt (hoặc trong Node), công cụ sẽ trải qua một loạt các bước.
+Mỗi khi bạn chạy Javascript trong một trình duyệt (hoặc trong Node), engine sẽ trải qua một loạt các bước.
 
 Một trong những bước này liên quan đến việc tạo ra  Execution Context toàn cục.
 
-Nhưng chờ đã, động cơ là gì?
+Nhưng chờ đã, engine là gì?
 
-Đó là, công cụ Javascript là "động cơ" chạy mã Javascript.
+Đó là, Javascript engine là "động cơ" chạy mã Javascript.
 
-Ngày nay có hai công cụ Javascript nổi bật: Google V8 và SpiderMonkey.
+Ngày nay có hai Javascript engine nổi bật: Google V8 và SpiderMonkey.
 
 V8 là công cụ JavaScript mã nguồn mở của Google, được sử dụng trong Google Chrome và Node.js.
 
@@ -112,7 +112,7 @@ Cho đến nay chúng ta có công cụ Javascript và một Execution Context
 Bây giờ là lúc để hiểu cách họ làm việc cùng nhau.
 
 ### Javascript: Execution Context là gì? Nó hoạt động như thế nào?
-Động cơ tạo ra mộtExecution Context toàn cục mỗi khi bạn chạy một số mã Javascript.
+engine tạo ra mộtExecution Context toàn cục mỗi khi bạn chạy một số mã Javascript.
 
 Execution Context là một từ ưa thích để mô tả môi trường mà mã Javascript của bạn chạy.
 
@@ -131,7 +131,7 @@ function pow(num) {
 }
 ```
 
-Động cơ đọc mã đó như thế nào?
+engine đọc mã đó như thế nào?
 
 Đây là một phiên bản đơn giản:
 
@@ -161,7 +161,7 @@ Hãy xem Bộ nhớ toàn cục là gì.
 
 ### Javascript:  Execution Context là gì? Bộ nhớ toàn cục
 
-Công cụ Javascript cũng có Bộ nhớ chung.
+Javascript engine cũng có Bộ nhớ chung.
 
 Bộ nhớ toàn cục chứa các biến toàn cục và các khai báo hàm để sử dụng sau này.
 
@@ -298,7 +298,7 @@ Chúng ta biết rằng các công cụ Javascript tạo ra mộ tExecution Cont
 
 Sau đó, khi bạn gọi một hàm trong mã của bạn:
 
-công cụ Javascript yêu cầu trợ giúp
+Javascript engine yêu cầu trợ giúp
 
 sự trợ giúp đó đến từ một người bạn của công cụ Javascript: Call stack
 
@@ -330,7 +330,7 @@ Thật là một khái niệm mạnh mẽ.
 
 Hãy Ghi nhớ nó trong tâm trí bạn.
 
-Hiểu cảExecution Context Toàn cục và Địa phương là chìa khóa để làm chủ scope và closures
+Hiểu cảExecution Context Toàn cục và cục bộ là chìa khóa để làm chủ scope và closures
 
 ### Javascript: Execution Context là gì? Call stack là gì? Gói gọn chúng lại nào
 
